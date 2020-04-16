@@ -48,7 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infa\IDbFactory.cs" />
+    <Compile Include="Infa\IResponsitory.cs" />
+    <Compile Include="Infa\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -59,6 +63,13 @@
       <Project>{a4c0c977-befa-4ad3-a86c-d56b54cb0a62}</Project>
       <Name>T.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\T.Model\T.Model.csproj">
+      <Project>{a2c8c1bd-770a-4535-9051-b91e264432d9}</Project>
+      <Name>T.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Responsitories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

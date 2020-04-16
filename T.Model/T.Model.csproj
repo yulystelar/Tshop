@@ -48,45 +48,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\BangLuongs.cs" />
-    <Compile Include="Models\BanMays.cs" />
-    <Compile Include="Models\Branchs.cs" />
-    <Compile Include="Models\Cabinets.cs" />
-    <Compile Include="Models\CallCenters.cs" />
-    <Compile Include="Models\ChamCongs.cs" />
-    <Compile Include="Models\CheckOutForTechDetails.cs" />
-    <Compile Include="Models\CheckOutForTechs.cs" />
-    <Compile Include="Models\CheckOutLRForTechDetail.cs" />
-    <Compile Include="Models\CheckOutLRForTechs.cs" />
-    <Compile Include="Models\CheckoutTramDetail.cs" />
-    <Compile Include="Models\CheckOutTrams.cs" />
-    <Compile Include="Models\ChiNhanhNH.cs" />
-    <Compile Include="Models\ChucVu.cs" />
-    <Compile Include="Models\ChungTu.cs" />
-    <Compile Include="Models\Citys.cs" />
-    <Compile Include="Models\Clients.cs" />
-    <Compile Include="Models\CustomerCalls.cs" />
-    <Compile Include="Models\Customers.cs" />
-    <Compile Include="Models\Dictionarys.cs" />
-    <Compile Include="Models\DispatchingLRNew.cs" />
-    <Compile Include="Models\DispatchingNews.cs" />
-    <Compile Include="Models\Dispatchings.cs" />
-    <Compile Include="Models\Districts.cs" />
-    <Compile Include="Models\DonViTinhs.cs" />
+    <Compile Include="Abs\Auditable.cs" />
+    <Compile Include="Abs\IAuditable.cs" />
+    <Compile Include="ModelHiddens\BangLuongs.cs" />
+    <Compile Include="ModelHiddens\BanMays.cs" />
+    <Compile Include="ModelHiddens\Branchs.cs" />
+    <Compile Include="ModelHiddens\Cabinets.cs" />
+    <Compile Include="ModelHiddens\CallCenters.cs" />
+    <Compile Include="ModelHiddens\ChamCongs.cs" />
+    <Compile Include="ModelHiddens\CheckOutForTechDetails.cs" />
+    <Compile Include="ModelHiddens\CheckOutForTechs.cs" />
+    <Compile Include="ModelHiddens\CheckOutLRForTechDetail.cs" />
+    <Compile Include="ModelHiddens\CheckOutLRForTechs.cs" />
+    <Compile Include="ModelHiddens\CheckoutTramDetail.cs" />
+    <Compile Include="ModelHiddens\CheckOutTrams.cs" />
+    <Compile Include="ModelHiddens\ChiNhanhNH.cs" />
+    <Compile Include="ModelHiddens\ChucVu.cs" />
+    <Compile Include="ModelHiddens\ChungTu.cs" />
+    <Compile Include="ModelHiddens\Citys.cs" />
+    <Compile Include="ModelHiddens\Clients.cs" />
+    <Compile Include="ModelHiddens\CustomerCalls.cs" />
+    <Compile Include="ModelHiddens\Customers.cs" />
+    <Compile Include="ModelHiddens\Dictionarys.cs" />
+    <Compile Include="ModelHiddens\DispatchingLRNew.cs" />
+    <Compile Include="ModelHiddens\DispatchingNews.cs" />
+    <Compile Include="ModelHiddens\Dispatchings.cs" />
+    <Compile Include="ModelHiddens\Districts.cs" />
+    <Compile Include="ModelHiddens\DonViTinhs.cs" />
+    <Compile Include="ModelHiddens\Footer.cs" />
+    <Compile Include="ModelHiddens\GiaoNhans.cs" />
+    <Compile Include="ModelHiddens\GoiDichVu.cs" />
+    <Compile Include="ModelHiddens\HinhThucThuChis.cs" />
+    <Compile Include="ModelHiddens\HoaDon.cs" />
+    <Compile Include="ModelHiddens\HoaDonDetails.cs" />
     <Compile Include="Models\Footer.cs" />
-    <Compile Include="Models\GiaoNhans.cs" />
-    <Compile Include="Models\GoiDichVu.cs" />
-    <Compile Include="Models\HinhThucThuChis.cs" />
-    <Compile Include="Models\HoaDon.cs" />
-    <Compile Include="Models\HoaDonDetails.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\MenuGroup.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
+    <Compile Include="Models\Page.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\PostCategory.cs" />
+    <Compile Include="Models\PostTag.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductCategory.cs" />
+    <Compile Include="Models\ProductTag.cs" />
+    <Compile Include="Models\Slider.cs" />
+    <Compile Include="Models\SupportOnline.cs" />
+    <Compile Include="Models\SystemConfig.cs" />
+    <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\VisitorStatistic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Abs\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

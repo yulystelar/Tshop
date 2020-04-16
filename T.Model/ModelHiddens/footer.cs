@@ -4,12 +4,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace T.Model.Models
 {
     [Table("Footers")]
-    public class Footer
+    public class Footerz
     {
         [Key]
-        [MaxLength(50)]
-        public string Id { set; get; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
+        public string ID { set; get; }
+       
         [Required]
         public string Content { set; get; }
     }

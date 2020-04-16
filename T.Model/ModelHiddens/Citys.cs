@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace T.Model.Models
 {
@@ -12,11 +7,9 @@ namespace T.Model.Models
     public class Citys
     {
         [Key]
-
-
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
         public int CityId { get; set; }
+
         public int NationalId { get; set; }
         public int ContinentId { get; set; }
         public string Code { get; set; }
@@ -29,6 +22,5 @@ namespace T.Model.Models
         public int Status { get; set; }
         [Required] public string IsPublic { get; set; }
         public string Image { get; set; }
-
     }
 }

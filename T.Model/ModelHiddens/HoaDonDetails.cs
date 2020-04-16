@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace T.Model.Models
 {
@@ -13,8 +8,8 @@ namespace T.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
         public int HoaDonDetailId { get; set; }
+
         public int HoaDonId { get; set; }
         public string NoiDung { get; set; }
         public string Dvt { get; set; }
@@ -23,6 +18,5 @@ namespace T.Model.Models
         public string ThanhTien { get; set; }
         public int MaPhieu { get; set; }
         public int LoaiPhieu { get; set; }
-
     }
 }
